@@ -10,8 +10,8 @@ using MyVet.Web.Data;
 namespace MyVet.Web.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200321203222_Users")]
-    partial class Users
+    [Migration("20200323201447_creartodo")]
+    partial class creartodo
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

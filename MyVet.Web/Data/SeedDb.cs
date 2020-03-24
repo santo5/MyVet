@@ -23,7 +23,7 @@ namespace MyVet.Web.Data
         {
             await _dataContext.Database.EnsureCreatedAsync();
             await CheckRoles();
-            var manager = await CheckUserAsync("1010", "Juan", "Zuluaga", "fvelasquez878@gmail.com", "350 634 2747", "Calle Luna Calle Sol", "Admin");
+            var manager = await CheckUserAsync("1010", "Santiago", "Velasquez", "fvelasquez878@gmail.com", "350 634 2747", "Calle Luna Calle Sol", "Admin");
             var customer = await CheckUserAsync("2020", "Juan", "Zuluaga", "fvelasquez1491@hotmail.com", "350 634 2747", "Calle Luna Calle Sol", "Customer");
             await CheckPetTypesAsync();
             await CheckServiceTypesAsync();
@@ -55,7 +55,7 @@ namespace MyVet.Web.Data
                     Document = document
                 };
 
-                await _userHelper.AddUserAsync(user, "123456");
+                await _userHelper.AddUserAsync(user, "Fsvf??9114");
                 await _userHelper.AddUserToRoleAsync(user, role);
             }
 
